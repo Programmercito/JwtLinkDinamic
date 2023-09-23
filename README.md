@@ -45,3 +45,6 @@ Resultado del código:
 ```
 https://sitio.me/ruta/eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3NTg2NTgxNjAsInYiOiJ7XCJtb25lZGFcIjpcIkRvbGFyXCIsXCJwcmVjaW9cIjozMy4yM30ifQ.ia4631434O9eyTYWZ7x0PfC-0EQ_uS-ONL_-_zNQ0jp5DWChoDJiWl-q53aphP95vgVD3ZaZUe8S00OG7Xpzzd7W-t8g0msq3EpTDXxwjHTCN546z-iGTFTV3AWFNQS8posDf_8dNknsuKT56ZTV_PZC5A-UyocRmXsDXXqsJcjpBJWZbWPIdh87iNzcSsruVH-KS09rDPQFSLlfyTKg8VuOKgoe-9cnOP4P3lSV-0uBacLe8jDMkUqpHNIprDM8mpIylR3lQ1B7ZvAxkFmiI-ZVP2pLIu5C4pWbW_xpZUQCOzX51V3tPI56kK0FHVXj7FvBmafEu8PZATUpvUEGnQ
 ```
+
+Ejemplo:
+https://github.com/Programmercito/JwtLinkDinamic-examples
