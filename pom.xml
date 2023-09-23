@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.programmercito</groupId>
     <artifactId>JwtLinkDinamic</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     
     <name>JwtLinkDinamic</name> 
-    <description>Libreria para la generacion de links dinamicos , donde no se usen sin backend en paginas como github y otras</description> 
+    <description>Libreria para la generacion de links dinamicos , donde no se use backend en paginas como github y otras</description> 
     <url>http://github.com/programmercito/JwtLinkDinamic</url> 
 
     
