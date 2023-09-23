@@ -1,0 +1,46 @@
+# Compilados de Java
+*.class
+
+# Archivos de paquete
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Directorio de compilación
+target/
+build/
+out/
+dist/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# IDEs y editores
+## Eclipse
+.classpath
+.project
+.settings/
+
+## IntelliJ IDEA
+*.iml
+*.iws
+.idea/
+out/
+
+## NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+## VS Code
+.vscode/
+
+# Otros
+.DS_Store
