@@ -1,20 +1,21 @@
-# JwtLinkDinamic (Traducción al inglés)
 
-`JwtLinkDinamic` is a library designed to generate links containing a JWT (JSON Web Token) with data that can be displayed on a frontend without the need for a backend.
+# JwtLinkDinamic
 
-## Why use JwtLinkDinamic?
+`JwtLinkDinamic` es una librería diseñada para generar enlaces que contienen un JWT (JSON Web Token) con datos que pueden ser mostrados en un frontend sin la necesidad de un backend.
 
-The main advantage of using `JwtLinkDinamic` is that it allows displaying data on the frontend without having to store it on the backend. Since the JWT is validated on the frontend, the data can be used directly for display. This not only simplifies the architecture but also improves security:
+## ¿Por qué usar JwtLinkDinamic?
 
-- **Asymmetric Signature**: `JwtLinkDinamic` uses asymmetric signing for JWTs. This is essential as the public key will be exposed on the frontend, but the private key will not. This ensures that the data cannot be modified, as if symmetric signing were used, this case could not work in the same way. Asymmetric signing ensures that, even though the public key is exposed, the data cannot be altered without the private key.
+La principal ventaja de usar `JwtLinkDinamic` es que permite mostrar datos en el frontend sin tener que almacenarlos en el backend. Dado que el JWT se valida en el frontend, los datos se pueden utilizar directamente para ser mostrados. Esto no solo simplifica la arquitectura, sino que también mejora la seguridad:
 
-- **Public Page**: Although the page must be public, `JwtLinkDinamic` ensures that the displayed data is correct.
+- **Firma Asimétrica**: `JwtLinkDinamic` utiliza firma asimétrica para los JWT. Esto es esencial ya que la llave pública estará expuesta en el frontend, pero la llave privada no. Esto garantiza que los datos no puedan ser modificados, ya que si se utilizara firma simétrica, este caso no podría funcionar de la misma manera. La firma asimétrica asegura que, aunque la llave pública esté expuesta, los datos no puedan ser alterados sin la llave privada.
 
-- **Prevention of XSS attacks**: By not having the data in plain text and being signed elsewhere, the possibility of XSS attacks that could occur if the data were in plain text is avoided.
+- **Página pública**: Aunque la página debe ser pública, `JwtLinkDinamic` garantiza que los datos mostrados sean los correctos.
+  
+- **Prevención de ataques XSS**: Al no tener los datos en texto plano y al estar firmados en otro lugar, se evita la posibilidad de ataques XSS que podrían ocurrir si los datos estuvieran en texto plano.
 
-## Installation
+## Instalación
 
-To add `JwtLinkDinamic` to your Maven project, simply add the following dependency to your `pom.xml` file:
+Para agregar `JwtLinkDinamic` a tu proyecto Maven, simplemente añade la siguiente dependencia en tu archivo `pom.xml`:
 
 ```xml
 <dependency>
@@ -24,9 +25,9 @@ To add `JwtLinkDinamic` to your Maven project, simply add the following dependen
 </dependency>
 ```
 
-## Usage
+## Uso
 
-Here is an example of how to use `JwtLinkDinamic`:
+Aquí tienes un ejemplo de cómo usar `JwtLinkDinamic`:
 
 ```java
 public static void main(String[] args) {
@@ -39,17 +40,18 @@ public static void main(String[] args) {
 }
 ```
 
-Code result:
+Resultado del código:
 
 ```
 [https://sitio.me/ruta/eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3NTg2NTgxNjAsInYiOiJ7XCJtb25lZGFcIjpcIkRvbGFyXCIsXCJwcmVjaW9cIjozMy4yM30ifQ.ia4631434O9eyTYWZ7x0PfC-0EQ_uS-ONL_-_zNQ0jp5DWChoDJiWl-q53aphP95vgVD3ZaZUe8S00OG7Xpzzd7W-t8g0msq3EpTDXxwjHTCN546z-iGTFTV3AWFNQS8posDf_8dNknsuKT56ZTV_PZC5A-UyocRmXsDXXqsJcjpBJWZbWPIdh87iNzcSsruVH-KS09rDPQFSLlfyTKg8VuOKgoe-9cnOP4P3lSV-0uBacLe8jDMkUqpHNIprDM8mpIylR3lQ1B7ZvAxkFmiI-ZVP2pLIu5C4pWbW_xpZUQCOzX51V3tPI56kK0FHVXj7FvBmafEu8PZATUpvUEGnQ](https://programmercito.github.io/jwtlink-web-example/#/example/eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3NTg3NTQwNDUsInYiOiJ7XCJtb25lZGFcIjpcIkRvbGFyXCIsXCJwcmVjaW9cIjozMy4yM30ifQ.bFApTsTqufmxrc7p6Eu9KYvVGsrlmJPV2VMbIdT6I8FMSJzUnA0ERqGBLKPspfN3uzB0rkw-Ftu97EkVqcoQIgwsMKw2wa_7EJW8TTp9imQ5nXv2H-Z5Jk43O6JKYZrb7b87pQkf-uajVjWRmWDmsN5l457MiG7Ln0_H7v0uAQsI251UWyLCTvsyAUkm1c2sRBPBVHoTDERSNoWFdWfZLDyoviyNB_iPUHVcTPxMJZAXd6Dg0MNC-TdyAwPSXp94J_lXjzn7x_o4-IExY19JlrJBoZ5lRZAQIi57y92U0lZNlTrjPZI7jkH_CnKpGv3qaVTqq7V35cCG2BjE8wH79A)
 ```
 
-Using our example:
+Usando nuestro ejemplo:
 
 https://programmercito.github.io/jwtlink-web-example/#/example/eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3NTg3NTQwNDUsInYiOiJ7XCJtb25lZGFcIjpcIkRvbGFyXCIsXCJwcmVjaW9cIjozMy4yM30ifQ.bFApTsTqufmxrc7p6Eu9KYvVGsrlmJPV2VMbIdT6I8FMSJzUnA0ERqGBLKPspfN3uzB0rkw-Ftu97EkVqcoQIgwsMKw2wa_7EJW8TTp9imQ5nXv2H-Z5Jk43O6JKYZrb7b87pQkf-uajVjWRmWDmsN5l457MiG7Ln0_H7v0uAQsI251UWyLCTvsyAUkm1c2sRBPBVHoTDERSNoWFdWfZLDyoviyNB_iPUHVcTPxMJZAXd6Dg0MNC-TdyAwPSXp94J_lXjzn7x_o4-IExY19JlrJBoZ5lRZAQIi57y92U0lZNlTrjPZI7jkH_CnKpGv3qaVTqq7V35cCG2BjE8wH79A
 
-Try it! and enjoy creating websites with dynamic data without a backend as the links can be created on your local PC or cell phone and the site on GitHub.
+Pruebalo! y disfruta creando sitios web con datos dinamicos sin backend ya que los links pueden crearse en tu pc local o celular y el sitio en github
 
-Example:
+
+Ejemplo:
 https://github.com/Programmercito/JwtLinkDinamic-examples
