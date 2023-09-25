@@ -52,4 +52,5 @@ https://programmercito.github.io/jwtlink-web-example/#/example/eyJhbGciOiJSUzI1N
 Try it! and enjoy creating websites with dynamic data without a backend as the links can be created on your local PC or cell phone and the site on GitHub.
 
 Example:
-https://github.com/Programmercito/JwtLinkDinamic-examples
+https://github.com/Programmercito/JwtLinkDinamic-examples example for generation of links, with services servers
+https://github.com/Programmercito/jwtlink-web-example web app with out backend
