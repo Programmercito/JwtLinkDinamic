@@ -1,4 +1,4 @@
-# JwtLinkDinamic (Traducción al inglés)
+# JwtLinkDinamic 
 
 `JwtLinkDinamic` is a library designed to generate links containing a JWT (JSON Web Token) with data that can be displayed on a frontend without the need for a backend.
 
